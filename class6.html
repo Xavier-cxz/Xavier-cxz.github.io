@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>class02</title>
+
+	<meta name="description" content="class02" >
+
+	<meta name="author" content="Xavier">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- Bootstrap  -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- icon fonts font Awesome -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Import Magnific Pop Up Styles -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+	<!-- Import Custom Styles -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- Import Animate Styles -->
+	<link href="assets/css/animate.min.css" rel="stylesheet">
+
+	<!-- Import owl.carousel Styles -->
+	<link href="assets/css/owl.carousel.css" rel="stylesheet">
+
+	<!-- Import Custom Responsive Styles -->
+	<link href="assets/css/responsive.css" rel="stylesheet">
+
+	
+	<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  		<![endif]-->
+
+  	</head>
+  	<body class="header-fixed-top">
+
+  		<div id="page-top" class="page-top"></div><!-- /.page-top -->
+
+  		<section id="top-contact" class="top-contact">
+  			<div class="container">
+          <div class="row">
+            <div class="col-sm-8 pull-left">
+              <ul class="contact-list">
+                <li>
+                  <a class="info" href="#">
+                    <span class="top-icon"><i class="fa fa-envelope"></i></span>
+                    congxzh@shanghaitech.edu.cn
+                  </a>
+                </li>
+                <li>
+                  <a class="phone-no" href="#">
+                    <span class="top-icon"><i class="fa fa-phone"></i></span>
+                    18817376673
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+  		</section><!-- /#top-contact --><div class="copyrights"></div>
+
+
+
+  		<section id="site-banner" class="site-banner text-center">
+  			<div class="container">
+  				<div class="site-logo">
+  					<a href="./"><img src="images/logo.png" alt="Site Logo"></a>
+  				</div><!-- /.site-logo -->
+  			</div><!-- /.container -->
+  		</section><!-- /#site-banner -->
+
+
+
+<section id="latest-post" class="latest-post">
+  <div class="container">
+      <div class="post-area-top text-center">
+        <h2 class="post-area-title">Final project starting</h2>
+      </div><!-- /.post-area-top -->
+      <div class="row">
+        <div class="latest-posts">
+            <p>
+                <font size="5">
+                 <p style="margin-left: auto">Since we want to do DESIGN something, idea is very important! Arduino actually is a very powerful software, as long as the idea is appeared , it should be realized by the arduino.</p>
+                <img src="class8/class8pic1.png" width = "600px" height="300px">
+                <p>In our group, we are all interested in music. Therefore, we want to do something about music. Since we need to do something better and complex, a Sound checker which can check the whether the key of a sound is standard is suitable.</p>
+                </font></p><br />
+<p>
+                <font size="5"><br />
+<li>Firstly, we need to figure out the logic. If we want to check the key of the sound, we need to set a standard key, frequency is the best choice. Thus, we search the standard frequency on the Internet</li>
+                <img src="class8/class8pic2.png" width="500px" height="330px">
+             <li>And we got this! This is a code named "pitches.h", which made by Brett Hagman who is the author of function tone(). It is easy to understand that NOTE_C1 refer to the frequency of C--33. Then if we can match this frequency to the receiving sound, we can get a very good Sound-checker.</li>
+            <p><li>However, we found that it is difficult to realize this algorithm.
+                The problem is that how can we match the frequency to its own frequency range. For example, we have a sound C, its frequency should be 33, but I have an unstabilized sound whose frequency is 34, how can I let the program know it should be corresponded to key C but not C#?The error is only 1 hz, though we have the algorithm, the device might be more exact!</li></p>
+                <p><li>What's more, we actually don't know how to transform the receiving sound into frequency. </li></p>
+            <img  src="class8/class8pic3.png" width="500px" height="330px">
+            The picture above is the existed component called sound sensor which can be bought on TaoBao, but it can  only give high and low two output when the volume of the sound is bigger than the threhold. Due to these reasons, we restruct our idea.
+
+</font></p><br /><br /><br /><p>
+                <font size="5">
+<li>Actually, it took us a long time to find the standard frequency of every key. We don't want waste our effort, so we reverse our mind. Since we can't make a sound-checker, we can make a sound-laundry which always gives the standard key.</li>
+
+
+</font></p><br /><br /><p>
+                <font size="5"><br /><br />
+
+<li>It starts at the software part, we don't need many devices.</li>
+                <img src="class8/class8pic4.png" width="600px" height="330px">
+                <li>You can main part of the code, it is not difficult. Tune and beat are all list, which contain the freqency of each key, and the beat of each key. The logic is simple,if there is any function you don't understand you can directly search it on the internet.</li>
+                <p><li>After finishing the compiling , you can connect the board. Therefore we get a initial mode!</li></p>
+                <embed src="class8/class8vid2.mp4" width="500px" height="500px" autostart="false">
+                <p><li>Ok, someone might think it is stupid. However, as a initial mode, it satisfied our command. Then, we want to do something more with the hardware! We have an idea,but we have difficulty realizing it ,we will ask for help in the next class.</li></p>
+
+
+
+</font></p><br /><br /><img src="images/class5/1.JPG"  width="800" height="600" ><br /><br />
+
+<br /><br /><img src="images/class5/2.JPG"  width="800" height="600" ><br /><br /><br /><br />
+<p>
+                <font size="5">
+
+<p>
+        
+            </font></p> 
+            <br /><br /><br /><br />
+            
+            <a class="btn" href="index.html">
+                    <span class="btn-icon"><i class="fa fa-arrow-circle-right"></i></span>
+                  <font size="4">Go back</font>
+                  </a>  
+      </div><!-- /.latest-posts -->
+      </div>
+    </div>
+</section><!-- /#latest-post -->   
+
+
+
+
+
+
+
+<div id="scroll-to-top" class="scroll-to-top">
+  <span>
+    <i class="fa fa-chevron-up"></i>    
+  </span>
+</div><!-- /#scroll-to-top -->
+
+
+
+<!-- Include modernizr-2.8.3.min.js -->
+<script src="assets/js/modernizr-2.8.3.min.js"></script>
+
+<!-- Include jquery.min.js plugin -->
+<script src="assets/js/jquery-2.1.0.min.js"></script>
+
+<!-- Include magnific-popup.min.js -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+
+
+<!-- Gmap3.js For Static Maps -->
+<script src="assets/js/gmap3.js"></script>
+
+<!-- Javascript Plugins  -->
+<script src="assets/js/plugins.js"></script>
+
+<!-- Custom Functions  -->
+<script src="assets/js/functions.js"></script>
+
+<script src="assets/js/wow.min.js"></script>
+
+<script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
+
+
+
+
+<script>
+
+ $(document).ready(function() {
+
+  /* -------- One page Navigation ----------*/
+  $('#main-menu #menu').onePageNav({
+    currentClass: 'active',
+    changeHash: false,
+    scrollSpeed: 1500,
+    scrollThreshold: 0.5,
+    scrollOffset: 95,
+    filter: ':not(.sub-menu a, .not-in-home)',
+    easing: 'swing'
+  }); 
+
+
+  /*----------- Google Map - with support of gmaps.js ----------------*/
+
+  function isMobile() { 
+   return ('ontouchstart' in document.documentElement);
+ }
+
+ function init_gmap() {
+   if ( typeof google == 'undefined' ) return;
+   var options = {
+    center: [-37.817331, 144.955652],
+    zoom: 15,
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+     style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+   },
+   navigationControl: true,
+   scrollwheel: false,
+   streetViewControl: true
+ }
+
+ if (isMobile()) {
+  options.draggable = false;
+}
+
+$('#googleMaps').gmap3({
+  map: {
+   options: options
+ },
+ marker: {
+   latLng: [-37.817331, 144.955652],
+   options: { icon: 'images/mapicon.png' }
+ }
+});
+}
+
+init_gmap();
+});
+
+
+
+</script>
+
+</body>
+</html>
+
